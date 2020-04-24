@@ -1,19 +1,15 @@
 // @flow
 import * as React from 'react';
 import {
-  TextInput,
   StyleSheet,
   View,
   TouchableOpacity,
   SafeAreaView,
-  Modal,
 } from 'react-native';
-import {OutlinedTextField} from 'react-native-material-textfield';
 import styleGuide from '../../config/styles';
-import {RNImage, Text} from '../index';
+import {Text} from '../index';
 import AppConstant from '../../config/constant';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import {useIsDrawerOpen} from '@react-navigation/drawer';
 
 type Props = {
   label?: string,

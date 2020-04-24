@@ -3,8 +3,6 @@ import * as React from 'react';
 import {
   Image as RNImage,
   Animated,
-  StyleSheet,
-  View,
   Platform,
 } from 'react-native';
 import {type ____ViewStyleProp_Internal as Style} from 'react-native/Libraries/StyleSheet/StyleSheetTypes';

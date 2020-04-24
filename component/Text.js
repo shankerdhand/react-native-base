@@ -2,11 +2,7 @@
 import * as React from 'react';
 import {Text} from 'react-native';
 
-import styleGuide, {
-  StyleProps,
-  Typographies,
-  StyleGuide,
-} from '../config/styles';
+import styleGuide, {StyleProps, Typographies} from '../config/styles';
 
 type TypographyProps = StyleProps & {
   type: $Keys<Typographies>,
