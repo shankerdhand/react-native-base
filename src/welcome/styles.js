@@ -1,3 +1,10 @@
+/**
+ * React Native App
+ * https://github.com/facebook/react-native
+ *
+ * @style file for welcome component
+ */
+
 import {StyleSheet} from 'react-native';
 import styleGuide from '../../config/styles';
 
