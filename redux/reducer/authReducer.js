@@ -1,4 +1,5 @@
 import {login} from '../actions/authAction';
+
 // Initial State
 const initialState = {
   user: undefined,
@@ -15,14 +16,14 @@ const authReducer = (state = initialState, action) => {
         user: action.user,
       };
     }
-
+    // LOGOUT
     case 'LOGOUT': {
       return {
         ...state,
         user: action.user,
       };
     }
-
+    // LOADING
     case 'LOADING': {
       return {
         ...state,
@@ -37,9 +38,13 @@ const authReducer = (state = initialState, action) => {
   }
 };
 
+/*
+ *@createUser a dispatch function to create a user
+ *@return promise of login result and error if applicable
+ */
 exports.createUser = payload => dispatch => {
   return new Promise((resolve, reject) => {
-    dispatch(login(records[0]._rawJson));
+    dispatch(login({}));
   });
 };
 

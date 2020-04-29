@@ -45,6 +45,9 @@ CheckBox.propTypes = {
   text: PropTypes.string,
 };
 
+/*
+ * @styles const common StyleSheet
+ */
 const styles = StyleSheet.create({
   checkBox: {
     flexDirection: 'row',

@@ -1,16 +1,14 @@
 // @flow
 import * as React from 'react';
-import {
-  StyleSheet,
-  View,
-  TouchableOpacity,
-  SafeAreaView,
-} from 'react-native';
+import {StyleSheet, View, TouchableOpacity, SafeAreaView} from 'react-native';
 import styleGuide from '../../config/styles';
 import {Text} from '../index';
 import AppConstant from '../../config/constant';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
+/*
+ * @Declaration props used in component.
+ */
 type Props = {
   label?: string,
   imageProfile?: string,
@@ -20,18 +18,17 @@ export default class Header extends React.Component<Props> {
   constructor(props) {
     super(props);
     Ionicons.loadFont();
-    this.state = {
-      isVisible: false,
-    };
   }
 
+  /*
+   * @Default props values.
+   */
   static defaultProps = {
     label: AppConstant.appName,
   };
 
   render(): React.Node {
     let {isBack, label, navigation, color} = this.props;
-    let {isVisible} = this.state;
     return (
       <SafeAreaView>
         <View
@@ -43,6 +40,7 @@ export default class Header extends React.Component<Props> {
             marginHorizontal: 20,
           }}>
           <View style={{flexDirection: 'row'}}>
+            {/* if isBack is true, Back button shown in header*/}
             {isBack && (
               <TouchableOpacity
                 style={{marginRight: 20}}
@@ -67,6 +65,7 @@ export default class Header extends React.Component<Props> {
               />
             </TouchableOpacity>
           </View>
+          {/* Header title */}
           <Text
             type={'title2'}
             align={'center'}
@@ -81,6 +80,9 @@ export default class Header extends React.Component<Props> {
   }
 }
 
+/*
+ * @styles const common StyleSheet
+ */
 const styles = StyleSheet.create({
   textInput: {
     ...styleGuide.styles.borderRadius,

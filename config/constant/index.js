@@ -1,3 +1,7 @@
+/*
+ * @Declaration of app constants .
+ */
+
 const AppConstant = {
   appName: 'Awesome App',
   preview:

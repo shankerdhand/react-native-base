@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 import {StyleSheet, View, Modal, ActivityIndicator} from 'react-native';
 import styleGuide from '../config/styles';
 
+/*
+ * @Loader component is common method for create loading ui while api request.
+ */
 const Loader = props => {
   const {loading, size, backgroundColor, spinnerColor, ...attributes} = props;
   let sz = 30;
@@ -21,6 +24,10 @@ const Loader = props => {
     </Modal>
   );
 };
+
+/*
+ * @styles const common StyleSheet
+ */
 const styles = StyleSheet.create({
   modalBackground: {
     flex: 1,

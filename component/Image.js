@@ -7,6 +7,9 @@ import {
 } from 'react-native';
 import {type ____ViewStyleProp_Internal as Style} from 'react-native/Libraries/StyleSheet/StyleSheetTypes';
 
+/*
+ * @Declaration props used in component.
+ */
 type ImageProps = {
   style?: Style,
   defaultSource?: number,
@@ -14,6 +17,9 @@ type ImageProps = {
   uri: string,
 };
 
+/*
+ * @Declaration state used in component.
+ */
 type ImageState = {
   uri: ?string,
   intensity: Animated.Value,
@@ -84,12 +90,3 @@ export default class Image extends React.Component<ImageProps, ImageState> {
     );
   }
 }
-
-const black = 'black';
-const propsToCopy = [
-  'borderRadius',
-  'borderBottomLeftRadius',
-  'borderBottomRightRadius',
-  'borderTopLeftRadius',
-  'borderTopRightRadius',
-];

@@ -4,6 +4,9 @@ import {Text} from 'react-native';
 
 import styleGuide, {StyleProps, Typographies} from '../config/styles';
 
+/*
+ * @Declaration props used in component.
+ */
 type TypographyProps = StyleProps & {
   type: $Keys<Typographies>,
   color: string,
